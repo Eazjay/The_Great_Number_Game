@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>The Great Number Game</title>
+</head>
+<style>
+    h1{
+        animation: blinkingBackground 1s infinite;
+    }
+    @keyframes blinkingBackground{
+        100%		{ background-color: #ef0a1a;}
+    }
+</style>
+<body>
+    <div class="container p-5 w-50 text-center mt-5">
+        <h1 class="text-white text-center p-5">YOU LOSE!!!</h1>
+        <br><br>
+        <a href="/"><input type="submit" class="btn btn-primary btn-lg" value="Try Again"></a>
+    </div>
+</body>
+</html>

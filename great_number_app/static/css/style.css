@@ -1,0 +1,19 @@
+
+.container{
+    width: 300px;
+    margin: 50px auto;
+    padding: 30px;
+    font-size: 25px;
+}
+
+input{
+    box-shadow: 3px 3px black;
+}
+
+button{
+    box-shadow: 3px 3px black;
+}
+
+h4{
+    color: inherit;
+}
