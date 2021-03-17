@@ -16,7 +16,7 @@ def guessed_num(request):
                 "low_num": f"{request.POST['num']} is Too Low!"
             }
             request.session['guess_count'] += 1
-            if request.session['guess_count'] == 5:
+            if request.session['guess_count'] == request.session['guess_limit']:
                 return render(request, 'try_again.html')
             return render(request, 'low_num.html', context)
         elif int(request.POST['num']) > request.session['num']:
