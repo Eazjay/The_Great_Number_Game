@@ -26,7 +26,7 @@
         <br>
         <form class="form-group" action="/guessed_num" method="post">
             {% csrf_token %}
-            <input type="number" name="num" value="num">
+            <input type="number" name="num">
             <br><br>
             <input class="btn btn-secondary btn-lg" type="submit" value="Try Again">
         </form>

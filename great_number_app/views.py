@@ -4,9 +4,8 @@ import random
 def index(request):
     request.session['guess_count'] = 0
     request.session['guess_limit'] = 5
-    num = random.randint(1, 100)
-    print(f"Code is {num}")
-    request.session['num'] = num
+    request.session['num'] = random.randint(1, 100)
+    print(f"Code is {request.session['num']}")
     return render(request, 'index.html')
 
 def guessed_num(request):
